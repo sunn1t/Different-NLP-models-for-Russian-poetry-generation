@@ -7,7 +7,7 @@ import os
 class ZalyzniakDict:
     @staticmethod
     def convert_to_accent_only(dict_file, accent_file):
-        with open(dict_file, 'r') as r:
+        with open(dict_file, 'r', encoding='utf-8') as r:
             lines = r.readlines()
         with open(accent_file, 'w', encoding='utf-8') as w:
             for line in lines:
